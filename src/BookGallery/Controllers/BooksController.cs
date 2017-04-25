@@ -8,5 +8,9 @@ namespace BookGallery.Controllers
 {
     public class BooksController : Controller
     {
+        public ActionResult Detail()
+        {
+            return View();
+        }
     }
 }
