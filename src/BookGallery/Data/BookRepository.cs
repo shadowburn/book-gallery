@@ -58,7 +58,12 @@ namespace BookGallery.Data
                 },
                 Favorite = false
             }
-    };
+        };
+
+        public Book[] GetBooks()
+        {
+            return _books;
+        }
 
         public Book GetBook(int id)
         {

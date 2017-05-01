@@ -17,6 +17,13 @@ namespace BookGallery.Controllers
             _bookRepository = new BookRepository();
         }
 
+        public ActionResult Index()
+        {
+            var books = _bookRepository.GetBooks();
+
+            return View(books);
+        }
+
         public ActionResult Detail(int? id)
         {
             if(id == null)
